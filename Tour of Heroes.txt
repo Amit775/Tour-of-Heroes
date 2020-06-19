@@ -1,0 +1,99 @@
+Tour of Heroes:
+
+	1. ng new tour-of-heroes --style=less --routing=false
+		1.1 intorducing files created automatically with ng new.
+		1.2 simple explanation about component-tree and modules-tree.
+	
+	
+	2. Module
+		2.1 declarations
+		2.2 imports
+		2.3 exports
+		2.4 AppModule, SharedModule, CoreModule and FeaturesModule
+		
+	3. Component
+		3.1 selector, template and styles
+		3.2 interpolation
+		3.3 childs component and inputs
+		3.4 parnets component and outputs
+		3.5 life-cycle hooks
+		
+	4. Good to know
+		4.1 angular material
+		4.2 ngModel and two-way binding and html events
+		4.3 *ngFor and *ngIf
+		4.3 conditional styles
+		4.4 simple explanation about default change detection
+	
+	assignment: create an application, with hero, heroes, and hero-details components.
+		hero: name and id
+		heroes: list of heroes, when clicked on hero, the right side (hero-details) show the details of the selected hero
+		hero-details: name, id, rivals, teamates, super-power, description, img
+
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+	
+	5. Pipe
+		5.1 angular pipes - uppercase, lowercase, date, courency, async
+		5.2 pipes with argument
+		5.3 pure vs impure pipes
+		
+	6. Directive
+		6.1 directive role
+		6.2 HostBinding and HostListener
+		6.3 elementRef
+		
+	7. Service
+		7.1 service role
+		7.2 Injectable and simple explanation about dependency injection
+	
+	8. Observable and rxjs
+		8.1 Observable interface and pattern
+		8.2 types of Subject and relation to Observable
+		
+	9. Route
+		9.1 Router module
+		9.2 routes, path, and component
+		9.3 Router and ActivatedRoute
+		9.4 routerLink
+		
+	10. HTTP
+		10.1 api-service
+		10.2 CRUD
+		10.3 subscribe to http
+		
+	
+	assignment: add editHero and createHero functionalities
+		all the actions should be with http requests
+		hero-details should be router-outlet
+		heros-list should be with Observable | async
+		
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+ 
+	11. Tests
+		11.1 pipe
+		11.2 service, service with dependencies
+		11.3 directive
+		11.4 simple component
+		11.5 component with dependencies
+		11.6 component with children
+		11.7 router and http
+		
+	assignment: test your application
+		
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+ 
+	12. ChangeDetection
+		12.1 Default
+		12.2 OnPush
+		12.3 Detach
+		
+	13. ViewEncapsulation
+		13.1 explanation
+		13.2 None vs Native
+		13.3 ng-deep and risks
+		
+	14. Dependency Injection
+		14.1 modules-tree and component-tree
+		14.2 Service
+		14.3 Token
+		14.4 Optional Self SkipSelf Host
