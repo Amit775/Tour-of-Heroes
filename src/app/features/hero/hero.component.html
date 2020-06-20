@@ -1,0 +1,7 @@
+<div class="container" [ngClass]="{'selected': isSelected}">
+	<div class="id"> {{ hero.id.length < 2 ? '0' + hero.id : hero.id }} </div>
+	<div class="hero">
+		<div class="title"> {{ hero.name }} </div>
+		<div class="sub-title"> {{ hero.power }} </div>
+	</div>
+</div>

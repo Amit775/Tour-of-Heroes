@@ -1,0 +1,26 @@
+<mat-card *ngIf="hero">
+	<mat-card-header>
+		<img mat-card-avatar [src]="hero.image" />
+		<mat-card-title-group>
+			<mat-card-title> {{ hero.name | uppercase }} </mat-card-title>
+
+			<mat-card-subtitle> {{ hero.description }} </mat-card-subtitle>
+		</mat-card-title-group>
+	</mat-card-header>
+
+	<mat-card-content>
+		<div class="row">
+			<div class="label"> teamates: </div>
+			<div class="related-heroes" *ngFor="let teamate of hero.teamates">
+				<span> {{ teamate }}</span>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="label"> rivals: </div>
+			<div class="related-heroes" *ngFor="let rival of hero.rivals">
+				<span> {{ rival }}</span>
+			</div>
+		</div>
+	</mat-card-content>
+</mat-card>

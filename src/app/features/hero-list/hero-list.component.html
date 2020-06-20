@@ -1,0 +1,5 @@
+<div class="container">
+	<div class='heroes-list'>
+		<app-hero *ngFor="let hero of heroes" [hero]="hero" (click)="selectHero(hero)" [isSelected]="hero === selectedHero"></app-hero>
+	</div>
+</div>
