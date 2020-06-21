@@ -9,5 +9,4 @@ import { Hero } from 'src/app/shared/models/hero';
 export class HeroComponent {
 
 	@Input() hero: Hero;
-	@Input() isSelected: boolean;
 }

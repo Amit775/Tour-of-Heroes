@@ -1,23 +1,18 @@
-import { Component, EventEmitter, Output } from '@angular/core';
+import { Component, EventEmitter, Output, OnInit } from '@angular/core';
 import { Hero } from 'src/app/shared/models/hero';
-import { heroes } from 'src/app/shared/models/heroes';
+import { HeroesService } from '../../core/heroes.service';
+
 @Component({
 	selector: 'app-hero-list',
 	templateUrl: './hero-list.component.html',
 	styleUrls: ['./hero-list.component.less']
 })
-export class HeroListComponent  {
+export class HeroListComponent implements OnInit {
 
-	selectedHero: Hero;
-	heroes: Hero[] = heroes;
-	@Output() selected = new EventEmitter<Hero>();
+	heroes: Hero[];
+	constructor(private heroesService: HeroesService) { }
 
-	selectHero(hero: Hero): void {
-		if (hero === this.selectedHero) {
-			return;
-		}
-
-		this.selectedHero = hero;
-		this.selected.emit(hero);
+	ngOnInit() {
+		this.heroes = this.heroesService.getHeroes();
 	}
 }

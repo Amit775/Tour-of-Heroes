@@ -1,4 +1,4 @@
-<mat-card *ngIf="hero">
+<mat-card *ngIf="hero$ | async as hero">
 	<mat-card-header>
 		<img mat-card-avatar [src]="hero.image" />
 		<mat-card-title-group>
