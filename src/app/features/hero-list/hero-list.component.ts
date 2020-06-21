@@ -17,6 +17,7 @@ export class HeroListComponent  {
 			return;
 		}
 
+		this.selectedHero = hero;
 		this.selected.emit(hero);
 	}
 }
